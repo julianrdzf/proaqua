@@ -23,6 +23,21 @@ def home(request: Request):
   return templates.TemplateResponse("index.html", {"request": request})
 
 
+@app.get("/gestion_integral", include_in_schema=False, response_class=HTMLResponse)
+def gestion_integral(request: Request):
+  return templates.TemplateResponse("gestion_integral.html", {"request": request})
+
+
+@app.get("/tratamiento", include_in_schema=False, response_class=HTMLResponse)
+def tratamiento(request: Request):
+  return templates.TemplateResponse("tratamiento.html", {"request": request})
+
+
+@app.get("/equipos", include_in_schema=False, response_class=HTMLResponse)
+def equipos(request: Request):
+  return templates.TemplateResponse("equipos.html", {"request": request})
+
+
 @app.get("/health", include_in_schema=False)
 def health():
   return {"status": "ok"}

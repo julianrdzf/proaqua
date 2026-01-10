@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ProAqua - Mantenimiento y servicios para torres de enfriamiento. Inspección, limpieza, reparación y puesta en marcha." />
+  <meta name="description" content="ProAqua - Servicios de tratamiento y gestión de aguas." />
+  <link rel="icon" type="image/x-icon" href="/static/img/favicon.png">
   <title>ProAqua</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,11 +27,10 @@
       </button>
 
       <nav class="nav" id="nav" data-nav>
+        <a href="/">Inicio</a>
         <a href="#servicios">Servicios</a>
-        <a href="#sectores">Sectores</a>
-        <a href="#proceso">Proceso</a>
-        <a href="#faq">FAQ</a>
-        <a class="btn btn-sm" href="#contacto">Solicitar cotización</a>
+        <a href="#productos">Productos</a> 
+        <a href="#contacto">Contacto</a>
       </nav>
     </div>
   </header>
@@ -39,44 +39,32 @@
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">Mantenimiento especializado</p>
-          <h1>Torres de enfriamiento seguras, eficientes y listas para operar</h1>
+          <p class="eyebrow">Servicios especializados</p>
+          <h1>Tratamiento y gestión de aguas</h1>
           <p class="lead">
-            En ProAqua realizamos inspección, limpieza, reparación y puesta en marcha para extender la vida útil de tus equipos y reducir paradas.
+            ProAqua es una empresa uruguaya especializada en servicios de tratamiento y gestión de aguas.<br> 
+            Tomamos como referencia las especificaciones de calidad de agua y vertidos del decreto 226/025, 
+            recientemente actualizado. Nos enfocamos en las necesidades del cliente y brindamos una gestión 
+            ágil y eficiente. La empresa está conformada por profesionales del área química y ambiental.
           </p>
           <div class="hero-cta">
-            <a class="btn" href="#contacto">Cotizar servicio</a>
+            <a class="btn" href="#contacto">Contacto</a>
             <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
           </div>
+          <!--
           <dl class="hero-badges" aria-label="Indicadores principales">
             <div>
               <dt>Respuesta</dt>
               <dd>Rápida</dd>
-            </div>
-            <div>
-              <dt>Mantenimiento</dt>
-              <dd>Preventivo y correctivo</dd>
-            </div>
+            </div>            
             <div>
               <dt>Enfoque</dt>
               <dd>Seguridad y continuidad</dd>
             </div>
-          </dl>
+          </dl>-->
         </div>
 
-        <div class="hero-card" role="region" aria-label="Resumen de servicios">
-          <h2 class="h3">Servicios clave</h2>
-          <ul class="checklist">
-            <li>Lavado y desinfección (control de incrustaciones y biofilm)</li>
-            <li>Inspección de bandeja, relleno, eliminadores y ventilación</li>
-            <li>Reparación de fugas, soportes y componentes mecánicos</li>
-            <li>Optimización de operación y recomendaciones de mejora</li>
-          </ul>
-          <div class="note">
-            <p><strong>Atención a plantas industriales, HVAC y procesos.</strong></p>
-            <p class="muted">*Datos de cobertura y horarios a confirmar.</p>
-          </div>
-        </div>
+        
       </div>
       <div class="hero-bg" aria-hidden="true"></div>
     </section>
@@ -84,183 +72,79 @@
     <section class="section" id="servicios">
       <div class="container">
         <div class="section-head">
-          <h2>Servicios</h2>
-          <p>Un paquete completo para mantener tu torre de enfriamiento en condiciones óptimas.</p>
+          <h2>Servicios</h2>          
         </div>
 
         <div class="grid cards">
-          <article class="card">
-            <h3>Mantenimiento preventivo</h3>
-            <p>Rutinas programadas para evitar fallas, reducir consumo y alargar la vida útil del sistema.</p>
-            <ul class="bullets">
-              <li>Inspección general y checklist</li>
-              <li>Ajustes y calibración</li>
-              <li>Informe con hallazgos</li>
-            </ul>
-          </article>
+          <a class="card servicios-planta" href="/gestion_integral">
+            <h3>Gestión integral de plantas de tratamiento de efluentes</h3>
+          </a>
 
-          <article class="card">
-            <h3>Mantenimiento correctivo</h3>
-            <p>Diagnóstico y reparación ante fallas, fugas, vibraciones o bajo rendimiento.</p>
-            <ul class="bullets">
-              <li>Reparación de componentes</li>
-              <li>Reemplazo de partes dañadas</li>
-              <li>Puesta en marcha</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Limpieza y desinfección</h3>
-            <p>Remoción de sólidos, incrustaciones y contaminación biológica para mejorar transferencia térmica.</p>
-            <ul class="bullets">
-              <li>Limpieza de bandeja y relleno</li>
-              <li>Lavado de boquillas</li>
-              <li>Recomendaciones de tratamiento</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Inspección técnica</h3>
-            <p>Evaluación del estado de la torre con foco en seguridad, rendimiento y confiabilidad.</p>
-            <ul class="bullets">
-              <li>Revisión mecánica y estructural</li>
-              <li>Detección de corrosión y desgaste</li>
-              <li>Plan de acciones priorizado</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Repuestos y mejoras</h3>
-            <p>Suministro e instalación de piezas para recuperar desempeño y reducir mantenimiento futuro.</p>
-            <ul class="bullets">
-              <li>Eliminadores, relleno, boquillas</li>
-              <li>Soportes, bandejas, sellos</li>
-              <li>Optimización de ventilación</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>Asesoría de operación</h3>
-            <p>Buenas prácticas y soporte para operar con eficiencia y minimizar riesgos.</p>
-            <ul class="bullets">
-              <li>Recomendaciones de rutina</li>
-              <li>Indicadores de desempeño</li>
-              <li>Capacitación básica</li>
-            </ul>
-          </article>
+          <a class="card servicios-torre" href="/tratamiento">
+            <h3>Tratamiento de agua para equipos industriales</h3>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="sectores">
+    <section class="section section-alt" id="productos">
       <div class="container">
         <div class="section-head">
-          <h2>Sectores</h2>
-          <p>Trabajamos con instalaciones donde la continuidad del proceso es clave.</p>
+          <h2>Productos</h2>
+          <p>Somos representantes de la marca española de respirometría SURCIS S.L.</p>
         </div>
 
         <div class="grid sectors">
-          <div class="pill">Industria y manufactura</div>
-          <div class="pill">HVAC y edificios</div>
-          <div class="pill">Alimentos y bebidas</div>
-          <div class="pill">Plásticos y química</div>
-          <div class="pill">Energía y utilidades</div>
-          <div class="pill">Centros logísticos</div>
+          <div class="pill surcis-logo">
+            <img src="/static/img/logo-surcis.png">
+            <div class="surcis-text"><p>Sistemas de<br>respirometría<br>multifuncional</p></div>
+          </div>          
+        </div>
+
+        <div class="grid cards">
+          <a class="card productos-respirometria" href="/equipos">
+            <h3>Equipos</h3>
+          </a>
         </div>
       </div>
-    </section>
-
-    <section class="section" id="proceso">
-      <div class="container">
-        <div class="section-head">
-          <h2>Cómo trabajamos</h2>
-          <p>Un proceso claro para que sepas qué se hace, cuándo y por qué.</p>
-        </div>
-
-        <ol class="steps">
-          <li>
-            <h3>Relevamiento</h3>
-            <p>Visitamos el sitio o relevamos información técnica para entender tu torre, acceso y condiciones de operación.</p>
-          </li>
-          <li>
-            <h3>Propuesta</h3>
-            <p>Enviamos alcance, tiempos y recomendaciones. Priorizamos seguridad y continuidad operativa.</p>
-          </li>
-          <li>
-            <h3>Ejecución</h3>
-            <p>Realizamos el servicio con protocolo de orden y limpieza. Coordinamos paradas si corresponde.</p>
-          </li>
-          <li>
-            <h3>Entrega</h3>
-            <p>Te dejamos un resumen del trabajo realizado y sugerencias para el próximo mantenimiento.</p>
-          </li>
-        </ol>
-
-        <div class="cta-band">
-          <div>
-            <h3 class="h3">¿Tenés una parada programada?</h3>
-            <p class="muted">Coordinamos mantenimiento para que el equipo vuelva a operar en tiempo y forma.</p>
-          </div>
-          <a class="btn" href="#contacto">Hablar con DIEMAR</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="faq">
-      <div class="container">
-        <div class="section-head">
-          <h2>Preguntas frecuentes</h2>
-          <p>Respuestas rápidas a las dudas típicas sobre mantenimiento de torres de enfriamiento.</p>
-        </div>
-
-        <div class="faq">
-          <details>
-            <summary>¿Cada cuánto conviene hacer mantenimiento?</summary>
-            <div class="faq-body">
-              <p>Depende del tipo de torre, carga térmica, calidad del agua y ambiente. Como base, se recomienda una rutina preventiva periódica y limpiezas según condición.</p>
-            </div>
-          </details>
-          <details>
-            <summary>¿Hacen mantenimiento con el equipo en marcha?</summary>
-            <div class="faq-body">
-              <p>Algunas inspecciones pueden realizarse en operación. Limpieza profunda o tareas mecánicas suelen requerir parada parcial o total por seguridad.</p>
-            </div>
-          </details>
-          <details>
-            <summary>¿Entregan informe del servicio?</summary>
-            <div class="faq-body">
-              <p>Sí, dejamos un resumen del trabajo y hallazgos principales, con recomendaciones para próximos pasos.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-    </section>
+    </section>     
 
     <section class="section" id="contacto">
       <div class="container">
         <div class="contact">
           <div class="contact-copy">
-            <h2>Contacto</h2>
-            <p class="lead">Contanos qué equipo tenés, ubicación y el problema o servicio que necesitás.</p>
+            <h2>Contacto</h2>           
 
             <div class="contact-cards">
               <div class="mini-card">
-                <h3 class="h4">Email</h3>
-                <p><a href="mailto:diegomartinez@gmail.com">diegomartinez@gmail.com</a></p>
+                <div class="contact-row">
+                  <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.01L12 13l8-6.99V6H4zm16 12V8.236l-7.4 6.47a1 1 0 0 1-1.2 0L4 8.236V18h16z" fill="currentColor"></path>
+                  </svg>
+                  <a href="mailto:proaqua@proaqua.com.uy">proaqua@proaqua.com.uy</a>
+                </div>
               </div>
               <div class="mini-card">
-                <h3 class="h4">Teléfono / WhatsApp</h3>
-                <p><a href="https://wa.me/59899438152" target="_blank" rel="noopener">+598 99438152</a></p>
+                <div class="contact-row">
+                  <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M12 2a10 10 0 0 0-8.62 15.07L2 22l5.09-1.34A10 10 0 1 0 12 2zm0 18.3a8.3 8.3 0 0 1-4.23-1.16l-.3-.18-3.03.8.81-2.95-.2-.31A8.3 8.3 0 1 1 12 20.3zm4.73-6.08c-.26-.13-1.52-.75-1.76-.83-.24-.09-.41-.13-.58.13-.17.26-.67.83-.83 1-.15.17-.3.2-.56.07-.26-.13-1.08-.4-2.06-1.28-.76-.68-1.27-1.52-1.42-1.78-.15-.26-.02-.4.11-.53.12-.12.26-.3.39-.45.13-.15.17-.26.26-.43.09-.17.04-.33-.02-.46-.07-.13-.58-1.4-.8-1.92-.2-.48-.41-.4-.58-.4h-.5c-.17 0-.45.06-.68.33-.24.26-.9.88-.9 2.15 0 1.27.92 2.5 1.05 2.67.13.17 1.81 2.76 4.39 3.87.61.26 1.08.41 1.45.53.61.19 1.16.16 1.6.1.49-.07 1.52-.62 1.73-1.22.22-.6.22-1.11.15-1.22-.06-.11-.24-.17-.5-.3z" fill="currentColor"></path>
+                  </svg>
+                  <a href="https://wa.me/59899438152" target="_blank" rel="noopener">+598 99438152</a>
+                </div>
               </div>
               <div class="mini-card">
-                <h3 class="h4">Zona</h3>
-                <p>Montevideo, Uruguay</p>
+                <div class="contact-row">
+                  <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M12 2a7 7 0 0 1 7 7c0 5.2-7 13-7 13S5 14.2 5 9a7 7 0 0 1 7-7zm0 9.5A2.5 2.5 0 1 0 12 6.5a2.5 2.5 0 0 0 0 5z" fill="currentColor"></path>
+                  </svg>
+                  <span>Montevideo, Uruguay</span>
+                </div>
               </div>
             </div>
 
             <div class="contact-actions">
               <a class="btn" href="https://wa.me/59899438152" target="_blank" rel="noopener">Escribir por WhatsApp</a>
-              <a class="btn btn-ghost" href="mailto:diegomartinez@gmail.com">Enviar email</a>
+              <a class="btn btn-ghost" href="mailto:proaqua@proaqua.com.uy">Enviar email</a>
             </div>
           </div>
         </div>
@@ -271,20 +155,21 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>
-        <div class="brand footer-brand">
-          <span class="brand-mark" aria-hidden="true">D</span>
-          <span class="brand-name">DIEMAR</span>
-        </div>
-        <p class="muted">Mantenimiento de torres de enfriamiento. Preventivo, correctivo, limpieza, inspección y mejoras.</p>
+        <a class="brand" href="/" aria-label="Inicio">
+          <img class="logo-img" src="/static/img/logo_dibujo.png" alt="ProAqua">
+          <span class="brand-name"><span class="brand-pro">Pro</span><span class="brand-a">A</span><span class="brand-qua">qua</span></span>
+        </a>
+        <p class="muted"> Servicios de tratamiento y gestión de aguas.</p>
       </div>
       <div class="footer-links">
         <a href="#servicios">Servicios</a>
-        <a href="#proceso">Proceso</a>
+        <a href="#productos">Productos</a>
         <a href="#contacto">Contacto</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p class="muted small">© <span id="year"></span> DIEMAR. Todos los derechos reservados.</p>
+      
+      <p class="muted small">© <span id="year"></span> ProAqua. Todos los derechos reservados.</p>
     </div>
   </footer>
 
