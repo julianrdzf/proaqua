@@ -26,26 +26,7 @@
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="brand" href="/" aria-label="Inicio">
-        <img class="logo-img" src="/static/img/logo_dibujo.png" alt="ProAqua">
-        <span class="brand-name"><span class="brand-pro">Pro</span><span class="brand-a">A</span><span class="brand-qua">qua</span></span>
-      </a>
-
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" data-nav-toggle>
-        <span class="sr-only">Abrir menú</span>
-        <span class="nav-toggle-bars" aria-hidden="true"></span>
-      </button>
-
-      <nav class="nav" id="nav" data-nav>
-        <a href="/">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#productos">Productos</a> 
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </div>
-  </header>
+  {% include "partials/header.html" %}
 
   <main id="contenido">
     <section class="hero">
@@ -83,11 +64,11 @@
 
     <section class="section" id="servicios">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head section-head-center">
           <h2>Servicios</h2>          
         </div>
 
-        <div class="grid cards">
+        <div class="grid cards cards-2">
           <a class="card servicios-planta" href="/gestion_integral">
             <h3>Gestión integral de plantas de tratamiento de efluentes</h3>
           </a>
@@ -101,19 +82,19 @@
 
     <section class="section section-alt" id="productos">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head section-head-center">
           <h2>Productos</h2>
           <p>Somos representantes de la marca española de respirometría SURCIS S.L.</p>
         </div>
 
-        <div class="grid sectors">
+        <div class="grid sectors sectors-center">
           <div class="pill surcis-logo">
             <img src="/static/img/logo-surcis.png">
             <div class="surcis-text"><p>Sistemas de<br>respirometría<br>multifuncional</p></div>
           </div>          
         </div>
 
-        <div class="grid cards">
+        <div class="grid cards cards-1">
           <a class="card productos-respirometria" href="/equipos">
             <h3>Equipos</h3>
           </a>
@@ -164,26 +145,7 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <a class="brand" href="/" aria-label="Inicio">
-          <img class="logo-img" src="/static/img/logo_dibujo.png" alt="ProAqua">
-          <span class="brand-name"><span class="brand-pro">Pro</span><span class="brand-a">A</span><span class="brand-qua">qua</span></span>
-        </a>
-        <p class="muted"> Servicios de tratamiento y gestión de aguas.</p>
-      </div>
-      <div class="footer-links">
-        <a href="#servicios">Servicios</a>
-        <a href="#productos">Productos</a>
-        <a href="#contacto">Contacto</a>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      
-      <p class="muted small">© <span id="year"></span> ProAqua. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+  {% include "partials/footer.html" %}
 
   <script src="/static/script.js"></script>
 </body>
