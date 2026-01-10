@@ -421,6 +421,10 @@ h1{
   margin-top: 20px;
 }
 
+.producto-wrapper a:hover{
+  text-decoration: none;
+}
+
 .producto-card{
   position: relative;
   width: 100%;
