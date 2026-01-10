@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 
 from fastapi import FastAPI, Request
-from fastapi.responses import HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
@@ -36,6 +36,16 @@ def tratamiento(request: Request):
 @app.get("/equipos", include_in_schema=False, response_class=HTMLResponse)
 def equipos(request: Request):
   return templates.TemplateResponse("equipos.html", {"request": request})
+
+
+@app.get("/robots.txt", include_in_schema=False)
+def robots():
+  return FileResponse(str(FRONTEND_DIR / "static" / "robots.txt"), media_type="text/plain")
+
+
+@app.get("/sitemap.xml", include_in_schema=False)
+def sitemap():
+  return FileResponse(str(FRONTEND_DIR / "static" / "sitemap.xml"), media_type="application/xml")
 
 
 @app.get("/health", include_in_schema=False)
