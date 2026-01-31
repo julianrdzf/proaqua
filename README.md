@@ -1,4 +1,4 @@
-# DIEMAR - Landing + FastAPI
+# ProAqua - Landing + FastAPI
 
 Este proyecto sirve una landing page estática (HTML/CSS/JS) usando **FastAPI**.
 
@@ -24,7 +24,7 @@ pip install -r requirements.txt
 3) Ejecutar el servidor:
 
 ```powershell
-uvicorn main:app --reload --host 127.0.0.1 --port 8000
+uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
 4) Abrir en el navegador:
