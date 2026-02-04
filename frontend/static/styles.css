@@ -265,7 +265,7 @@ h1{
   border: 1px solid rgba(56,189,248,.18);
 }
 
-.section{ padding: 54px 0; position: relative; }
+.section{ padding: 54px 0; position: relative; scroll-margin-top: 80px; }
 .section-alt{ background: rgba(11,18,32,.03); border-top: 1px solid rgba(11,18,32,.06); border-bottom: 1px solid rgba(11,18,32,.06); }
 .section-head{ margin-bottom: 18px; }
 .section-head h2{ margin: 0 0 8px; font-size: 26px; }

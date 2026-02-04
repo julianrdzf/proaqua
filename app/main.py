@@ -32,11 +32,11 @@ def gestion_integral(request: Request):
 def tratamiento(request: Request):
   return templates.TemplateResponse("tratamiento.html", {"request": request})
 
-
+'''
 @app.get("/equipos", include_in_schema=False, response_class=HTMLResponse)
 def equipos(request: Request):
   return templates.TemplateResponse("equipos.html", {"request": request})
-
+'''
 
 @app.get("/robots.txt", include_in_schema=False)
 def robots():
